@@ -31,7 +31,7 @@ import pickle
 from processor_Binance import BinanceProcessor
 from config_main import TICKER_LIST, TECHNICAL_INDICATORS_LIST, TIMEFRAME, trade_start_date, trade_end_date, no_candles_for_train
 
-
+import log
 def main():
     print_config_variables()
     data_from_processor, price_array, tech_array, time_array = process_data()
@@ -54,8 +54,9 @@ def process_data():
 
 def save_data_to_disk(data_from_processor, price_array, tech_array, time_array):
     data_folder = f'./data/trade_data/{TIMEFRAME}_{str(trade_start_date[2:10])}_{str(trade_end_date[2:10])}'
+    log.info(data_folder)
     if not os.path.exists(data_folder):
-        os.mkdir(data_folder)
+        os.makedirs(data_folder,exist_ok=True)
     _save_to_disk(data_from_processor, f"{data_folder}/data_from_processor")
     _save_to_disk(price_array, f"{data_folder}/price_array")
     _save_to_disk(tech_array, f"{data_folder}/tech_array")

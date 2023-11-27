@@ -1,0 +1,45 @@
+##################################  || ppo || ##################################
+MODEL NAME: ppo
+TRIAL NUMBER: 0
+CWD: ./train_results/cwd_tests/model_CPCV_ppo_5m_50H_25k
+{'learning_rate': 0.03, 'batch_size': 512, 'gamma': 0.99, 'net_dimension': 1024, 'target_step': 37500, 'eval_time_gap': 60, 'break_step': 45000.0}
+{'lookback': 1, 'norm_cash': 0.000244140625, 'norm_stocks': 0.00390625, 'norm_tech': 3.0517578125e-05, 'norm_reward': 0.0009765625, 'norm_action': 10000}
+
+TIME START OUTER: 2023-11-27 22:54:15.101338
+
+######### CPCV Settings #########
+Paths  : 4
+N      : 5
+splits : 10
+
+TIME START INNER: 2023-11-27 22:54:15.110332
+SPLIT: 0     # Optimizing for Sharpe ratio!
+BOT:         18.442870570249205
+HODL:        0.02776624530791774
+TIME END INNER: 2023-11-27 23:07:28.870524
+
+TIME START INNER: 2023-11-27 23:07:28.887515
+SPLIT: 1     # Optimizing for Sharpe ratio!
+BOT:         18.407155416648756
+HODL:        -0.0034575651936672776
+TIME END INNER: 2023-11-27 23:21:47.183156
+
+TIME START INNER: 2023-11-27 23:21:47.194149
+SPLIT: 2     # Optimizing for Sharpe ratio!
+BOT:         20.03803096050646
+HODL:        -0.024468443317344966
+TIME END INNER: 2023-11-27 23:40:50.588661
+
+TIME START INNER: 2023-11-27 23:40:50.606701
+SPLIT: 3     # Optimizing for Sharpe ratio!
+BOT:         18.66004522421496
+HODL:        0.007929409498917009
+TIME END INNER: 2023-11-27 23:54:21.610895
+
+TIME START INNER: 2023-11-27 23:54:21.632927
+SPLIT: 4     # Optimizing for Sharpe ratio!
+BOT:         20.15384796875415
+HODL:        -0.006543444202487422
+TIME END INNER: 2023-11-28 00:10:32.152842
+
+TIME START INNER: 2023-11-28 00:10:32.165835
